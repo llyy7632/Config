@@ -8,6 +8,11 @@ spring:
     password: root
   application:
     name: User-Service
+  cloud:
+    gateway:
+      routes:
+        - id: route1
+         
 mybatis:
   type-aliases-package: cn.far.pojo
 eureka:
@@ -24,4 +29,4 @@ eureka:
     lease-renewal-interval-in-seconds: 5  # 服务续约时间，默认30s
     lease-expiration-duration-in-seconds: 5   # 服务失效时间，默认90s
 
-yes!
+
